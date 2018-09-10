@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAE11F6F2146CDBD0016AAE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F6E2146CDBD0016AAE4 /* AppDelegate.swift */; };
+		CAE11F712146CDBD0016AAE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F702146CDBD0016AAE4 /* ViewController.swift */; };
+		CAE11F742146CDBD0016AAE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE11F722146CDBD0016AAE4 /* Main.storyboard */; };
+		CAE11F762146CDBD0016AAE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE11F752146CDBD0016AAE4 /* Assets.xcassets */; };
+		CAE11F792146CDBD0016AAE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE11F772146CDBD0016AAE4 /* LaunchScreen.storyboard */; };
+		CAE11F842146CDBE0016AAE4 /* Crypto_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F832146CDBE0016AAE4 /* Crypto_TrackerTests.swift */; };
+		CAE11F8F2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F8E2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAE11F802146CDBE0016AAE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE11F632146CDBD0016AAE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE11F6A2146CDBD0016AAE4;
+			remoteInfo = "Crypto Tracker";
+		};
+		CAE11F8B2146CDBE0016AAE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE11F632146CDBD0016AAE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE11F6A2146CDBD0016AAE4;
+			remoteInfo = "Crypto Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAE11F6B2146CDBD0016AAE4 /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE11F6E2146CDBD0016AAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAE11F702146CDBD0016AAE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAE11F732146CDBD0016AAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAE11F752146CDBD0016AAE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAE11F782146CDBD0016AAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAE11F7A2146CDBD0016AAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE11F7F2146CDBE0016AAE4 /* Crypto TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE11F832146CDBE0016AAE4 /* Crypto_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_TrackerTests.swift; sourceTree = "<group>"; };
+		CAE11F852146CDBE0016AAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE11F8A2146CDBE0016AAE4 /* Crypto TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE11F8E2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_TrackerUITests.swift; sourceTree = "<group>"; };
+		CAE11F902146CDBE0016AAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE11F682146CDBD0016AAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE11F7C2146CDBE0016AAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE11F872146CDBE0016AAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAE11F622146CDBD0016AAE4 = {
+			isa = PBXGroup;
+			children = (
+				CAE11F6D2146CDBD0016AAE4 /* Crypto Tracker */,
+				CAE11F822146CDBE0016AAE4 /* Crypto TrackerTests */,
+				CAE11F8D2146CDBE0016AAE4 /* Crypto TrackerUITests */,
+				CAE11F6C2146CDBD0016AAE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE11F6C2146CDBD0016AAE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE11F6B2146CDBD0016AAE4 /* Crypto Tracker.app */,
+				CAE11F7F2146CDBE0016AAE4 /* Crypto TrackerTests.xctest */,
+				CAE11F8A2146CDBE0016AAE4 /* Crypto TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE11F6D2146CDBD0016AAE4 /* Crypto Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				CAE11F6E2146CDBD0016AAE4 /* AppDelegate.swift */,
+				CAE11F702146CDBD0016AAE4 /* ViewController.swift */,
+				CAE11F722146CDBD0016AAE4 /* Main.storyboard */,
+				CAE11F752146CDBD0016AAE4 /* Assets.xcassets */,
+				CAE11F772146CDBD0016AAE4 /* LaunchScreen.storyboard */,
+				CAE11F7A2146CDBD0016AAE4 /* Info.plist */,
+			);
+			path = "Crypto Tracker";
+			sourceTree = "<group>";
+		};
+		CAE11F822146CDBE0016AAE4 /* Crypto TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAE11F832146CDBE0016AAE4 /* Crypto_TrackerTests.swift */,
+				CAE11F852146CDBE0016AAE4 /* Info.plist */,
+			);
+			path = "Crypto TrackerTests";
+			sourceTree = "<group>";
+		};
+		CAE11F8D2146CDBE0016AAE4 /* Crypto TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAE11F8E2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift */,
+				CAE11F902146CDBE0016AAE4 /* Info.plist */,
+			);
+			path = "Crypto TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE11F6A2146CDBD0016AAE4 /* Crypto Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE11F932146CDBE0016AAE4 /* Build configuration list for PBXNativeTarget "Crypto Tracker" */;
+			buildPhases = (
+				CAE11F672146CDBD0016AAE4 /* Sources */,
+				CAE11F682146CDBD0016AAE4 /* Frameworks */,
+				CAE11F692146CDBD0016AAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crypto Tracker";
+			productName = "Crypto Tracker";
+			productReference = CAE11F6B2146CDBD0016AAE4 /* Crypto Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAE11F7E2146CDBE0016AAE4 /* Crypto TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE11F962146CDBE0016AAE4 /* Build configuration list for PBXNativeTarget "Crypto TrackerTests" */;
+			buildPhases = (
+				CAE11F7B2146CDBE0016AAE4 /* Sources */,
+				CAE11F7C2146CDBE0016AAE4 /* Frameworks */,
+				CAE11F7D2146CDBE0016AAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE11F812146CDBE0016AAE4 /* PBXTargetDependency */,
+			);
+			name = "Crypto TrackerTests";
+			productName = "Crypto TrackerTests";
+			productReference = CAE11F7F2146CDBE0016AAE4 /* Crypto TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAE11F892146CDBE0016AAE4 /* Crypto TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE11F992146CDBE0016AAE4 /* Build configuration list for PBXNativeTarget "Crypto TrackerUITests" */;
+			buildPhases = (
+				CAE11F862146CDBE0016AAE4 /* Sources */,
+				CAE11F872146CDBE0016AAE4 /* Frameworks */,
+				CAE11F882146CDBE0016AAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE11F8C2146CDBE0016AAE4 /* PBXTargetDependency */,
+			);
+			name = "Crypto TrackerUITests";
+			productName = "Crypto TrackerUITests";
+			productReference = CAE11F8A2146CDBE0016AAE4 /* Crypto TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE11F632146CDBD0016AAE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Jero Sanchez";
+				TargetAttributes = {
+					CAE11F6A2146CDBD0016AAE4 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					CAE11F7E2146CDBE0016AAE4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CAE11F6A2146CDBD0016AAE4;
+					};
+					CAE11F892146CDBE0016AAE4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CAE11F6A2146CDBD0016AAE4;
+					};
+				};
+			};
+			buildConfigurationList = CAE11F662146CDBD0016AAE4 /* Build configuration list for PBXProject "Crypto Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE11F622146CDBD0016AAE4;
+			productRefGroup = CAE11F6C2146CDBD0016AAE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE11F6A2146CDBD0016AAE4 /* Crypto Tracker */,
+				CAE11F7E2146CDBE0016AAE4 /* Crypto TrackerTests */,
+				CAE11F892146CDBE0016AAE4 /* Crypto TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE11F692146CDBD0016AAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE11F792146CDBD0016AAE4 /* LaunchScreen.storyboard in Resources */,
+				CAE11F762146CDBD0016AAE4 /* Assets.xcassets in Resources */,
+				CAE11F742146CDBD0016AAE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE11F7D2146CDBE0016AAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE11F882146CDBE0016AAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE11F672146CDBD0016AAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE11F712146CDBD0016AAE4 /* ViewController.swift in Sources */,
+				CAE11F6F2146CDBD0016AAE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE11F7B2146CDBE0016AAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE11F842146CDBE0016AAE4 /* Crypto_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE11F862146CDBE0016AAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE11F8F2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAE11F812146CDBE0016AAE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE11F6A2146CDBD0016AAE4 /* Crypto Tracker */;
+			targetProxy = CAE11F802146CDBE0016AAE4 /* PBXContainerItemProxy */;
+		};
+		CAE11F8C2146CDBE0016AAE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE11F6A2146CDBD0016AAE4 /* Crypto Tracker */;
+			targetProxy = CAE11F8B2146CDBE0016AAE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAE11F722146CDBD0016AAE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE11F732146CDBD0016AAE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAE11F772146CDBD0016AAE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE11F782146CDBD0016AAE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAE11F912146CDBE0016AAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAE11F922146CDBE0016AAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE11F942146CDBE0016AAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Crypto Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jerosanchez.Crypto-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAE11F952146CDBE0016AAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Crypto Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jerosanchez.Crypto-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAE11F972146CDBE0016AAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Crypto TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jerosanchez.Crypto-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crypto Tracker.app/Crypto Tracker";
+			};
+			name = Debug;
+		};
+		CAE11F982146CDBE0016AAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Crypto TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jerosanchez.Crypto-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crypto Tracker.app/Crypto Tracker";
+			};
+			name = Release;
+		};
+		CAE11F9A2146CDBE0016AAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Crypto TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jerosanchez.Crypto-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Crypto Tracker";
+			};
+			name = Debug;
+		};
+		CAE11F9B2146CDBE0016AAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Crypto TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jerosanchez.Crypto-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Crypto Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE11F662146CDBD0016AAE4 /* Build configuration list for PBXProject "Crypto Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE11F912146CDBE0016AAE4 /* Debug */,
+				CAE11F922146CDBE0016AAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE11F932146CDBE0016AAE4 /* Build configuration list for PBXNativeTarget "Crypto Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE11F942146CDBE0016AAE4 /* Debug */,
+				CAE11F952146CDBE0016AAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE11F962146CDBE0016AAE4 /* Build configuration list for PBXNativeTarget "Crypto TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE11F972146CDBE0016AAE4 /* Debug */,
+				CAE11F982146CDBE0016AAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE11F992146CDBE0016AAE4 /* Build configuration list for PBXNativeTarget "Crypto TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE11F9A2146CDBE0016AAE4 /* Debug */,
+				CAE11F9B2146CDBE0016AAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAE11F632146CDBD0016AAE4 /* Project object */;
+}
