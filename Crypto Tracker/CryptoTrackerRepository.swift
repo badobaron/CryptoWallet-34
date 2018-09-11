@@ -8,29 +8,32 @@
 
 import Foundation
 
-class CryptoListRepository {
+class CryptoTrackerRepository {
     
-    private var dataSource: CryptoDataSource
+    private var dataSource: DataSource
     
-    private(set) var data = BindableProperty(value: [CryptoCoin]())
+    private(set) var data = BindableProperty(value: [CryptoCurrency]())
     
-    init(dataSource: CryptoDataSource) {
+    init(dataSource: DataSource) {
         self.dataSource = dataSource
     }
     
-    func fetchData(currency: String) {
+    func fetchWalletItems(currency: String) {
         
+        // Some crypto currencies to track
+        // TODO: make it dynamic
         let symbols = ["BCH", "BTC", "EOS", "ETH", "ETC",
                        "DASH", "DOGE", "ETH", "LTC", "MAID",
-                       "NEO", "REP", "TRX", "XEM", "XMR", "XRP"]
+                       "NEO", "REP", "TRX", "XEM", "XMR",
+                       "XRP"]
         
-        var fetchedData = [CryptoCoin]()
+        var fetchedData = [CryptoCurrency]()
         
         DispatchQueue.global(qos: .background).async {
             self.dataSource.prices(for: symbols, currency: currency, { (prices) in
                 for symbol in symbols {
                     if let price = prices[symbol] {
-                        let item = CryptoCoin(
+                        let item = CryptoCurrency(
                             symbol: symbol,
                             image: symbol.lowercased(),
                             price: price,

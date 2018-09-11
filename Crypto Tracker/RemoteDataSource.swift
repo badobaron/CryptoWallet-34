@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class CryptoRemoteDataSource: CryptoDataSource {
+class RemoteDataSource: DataSource {
     
     private let baseUrl = "https://min-api.cryptocompare.com/data"
     

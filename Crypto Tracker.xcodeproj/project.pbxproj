@@ -11,17 +11,17 @@
 		3B3D1CBB0F1A1EDEC03DD9DB /* Pods_Crypto_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFEDE542E9B08BD177369DF /* Pods_Crypto_TrackerUITests.framework */; };
 		951E3FCCF134BFCF231B3F80 /* Pods_Crypto_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72DB09ED05B319AE8118321 /* Pods_Crypto_Tracker.framework */; };
 		CAE11F6F2146CDBD0016AAE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F6E2146CDBD0016AAE4 /* AppDelegate.swift */; };
-		CAE11F712146CDBD0016AAE4 /* CryptoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F702146CDBD0016AAE4 /* CryptoListViewController.swift */; };
+		CAE11F712146CDBD0016AAE4 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F702146CDBD0016AAE4 /* WalletViewController.swift */; };
 		CAE11F762146CDBD0016AAE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE11F752146CDBD0016AAE4 /* Assets.xcassets */; };
 		CAE11F792146CDBD0016AAE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE11F772146CDBD0016AAE4 /* LaunchScreen.storyboard */; };
 		CAE11F842146CDBE0016AAE4 /* Crypto_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F832146CDBE0016AAE4 /* Crypto_TrackerTests.swift */; };
 		CAE11F8F2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F8E2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift */; };
-		CAE11F9D2146D1FE0016AAE4 /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F9C2146D1FE0016AAE4 /* CryptoListViewModel.swift */; };
+		CAE11F9D2146D1FE0016AAE4 /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F9C2146D1FE0016AAE4 /* WalletViewModel.swift */; };
 		CAE11F9F2146D2870016AAE4 /* BindableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F9E2146D2870016AAE4 /* BindableProperty.swift */; };
-		CAE11FA32146DD790016AAE4 /* CryptoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA22146DD790016AAE4 /* CryptoListRepository.swift */; };
-		CAE11FA52146E0950016AAE4 /* CryptoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA42146E0950016AAE4 /* CryptoDataSource.swift */; };
-		CAE11FA72146E0B60016AAE4 /* CryptoRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA62146E0B60016AAE4 /* CryptoRemoteDataSource.swift */; };
-		CAFD15612148193600B2201F /* CryptoCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD15602148193600B2201F /* CryptoCoin.swift */; };
+		CAE11FA32146DD790016AAE4 /* CryptoTrackerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA22146DD790016AAE4 /* CryptoTrackerRepository.swift */; };
+		CAE11FA52146E0950016AAE4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA42146E0950016AAE4 /* DataSource.swift */; };
+		CAE11FA72146E0B60016AAE4 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA62146E0B60016AAE4 /* RemoteDataSource.swift */; };
+		CAFD15612148193600B2201F /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD15602148193600B2201F /* CryptoCurrency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		B72DB09ED05B319AE8118321 /* Pods_Crypto_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE11F6B2146CDBD0016AAE4 /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE11F6E2146CDBD0016AAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAE11F702146CDBD0016AAE4 /* CryptoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewController.swift; sourceTree = "<group>"; };
+		CAE11F702146CDBD0016AAE4 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		CAE11F752146CDBD0016AAE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAE11F782146CDBD0016AAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAE11F7A2146CDBD0016AAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,12 +61,12 @@
 		CAE11F8A2146CDBE0016AAE4 /* Crypto TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE11F8E2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_TrackerUITests.swift; sourceTree = "<group>"; };
 		CAE11F902146CDBE0016AAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAE11F9C2146D1FE0016AAE4 /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
+		CAE11F9C2146D1FE0016AAE4 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
 		CAE11F9E2146D2870016AAE4 /* BindableProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableProperty.swift; sourceTree = "<group>"; };
-		CAE11FA22146DD790016AAE4 /* CryptoListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListRepository.swift; sourceTree = "<group>"; };
-		CAE11FA42146E0950016AAE4 /* CryptoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDataSource.swift; sourceTree = "<group>"; };
-		CAE11FA62146E0B60016AAE4 /* CryptoRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRemoteDataSource.swift; sourceTree = "<group>"; };
-		CAFD15602148193600B2201F /* CryptoCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCoin.swift; sourceTree = "<group>"; };
+		CAE11FA22146DD790016AAE4 /* CryptoTrackerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerRepository.swift; sourceTree = "<group>"; };
+		CAE11FA42146E0950016AAE4 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		CAE11FA62146E0B60016AAE4 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		CAFD15602148193600B2201F /* CryptoCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 		CAFD156221481B4B00B2201F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DBFEDE542E9B08BD177369DF /* Pods_Crypto_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8674B18F757EC793AE07C1 /* Pods-Crypto TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto TrackerTests/Pods-Crypto TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,12 +150,12 @@
 			children = (
 				CAE11F6E2146CDBD0016AAE4 /* AppDelegate.swift */,
 				CAE11F9E2146D2870016AAE4 /* BindableProperty.swift */,
-				CAE11F702146CDBD0016AAE4 /* CryptoListViewController.swift */,
-				CAE11F9C2146D1FE0016AAE4 /* CryptoListViewModel.swift */,
-				CAFD15602148193600B2201F /* CryptoCoin.swift */,
-				CAE11FA22146DD790016AAE4 /* CryptoListRepository.swift */,
-				CAE11FA42146E0950016AAE4 /* CryptoDataSource.swift */,
-				CAE11FA62146E0B60016AAE4 /* CryptoRemoteDataSource.swift */,
+				CAE11F702146CDBD0016AAE4 /* WalletViewController.swift */,
+				CAE11F9C2146D1FE0016AAE4 /* WalletViewModel.swift */,
+				CAFD15602148193600B2201F /* CryptoCurrency.swift */,
+				CAE11FA22146DD790016AAE4 /* CryptoTrackerRepository.swift */,
+				CAE11FA42146E0950016AAE4 /* DataSource.swift */,
+				CAE11FA62146E0B60016AAE4 /* RemoteDataSource.swift */,
 				CAE11F752146CDBD0016AAE4 /* Assets.xcassets */,
 				CAE11F772146CDBD0016AAE4 /* LaunchScreen.storyboard */,
 				CAE11F7A2146CDBD0016AAE4 /* Info.plist */,
@@ -393,14 +393,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAE11F712146CDBD0016AAE4 /* CryptoListViewController.swift in Sources */,
-				CAE11F9D2146D1FE0016AAE4 /* CryptoListViewModel.swift in Sources */,
-				CAE11FA32146DD790016AAE4 /* CryptoListRepository.swift in Sources */,
-				CAE11FA52146E0950016AAE4 /* CryptoDataSource.swift in Sources */,
+				CAE11F712146CDBD0016AAE4 /* WalletViewController.swift in Sources */,
+				CAE11F9D2146D1FE0016AAE4 /* WalletViewModel.swift in Sources */,
+				CAE11FA32146DD790016AAE4 /* CryptoTrackerRepository.swift in Sources */,
+				CAE11FA52146E0950016AAE4 /* DataSource.swift in Sources */,
 				CAE11F6F2146CDBD0016AAE4 /* AppDelegate.swift in Sources */,
-				CAFD15612148193600B2201F /* CryptoCoin.swift in Sources */,
+				CAFD15612148193600B2201F /* CryptoCurrency.swift in Sources */,
 				CAE11F9F2146D2870016AAE4 /* BindableProperty.swift in Sources */,
-				CAE11FA72146E0B60016AAE4 /* CryptoRemoteDataSource.swift in Sources */,
+				CAE11FA72146E0B60016AAE4 /* RemoteDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

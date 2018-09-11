@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let viewController = CryptoListViewController()
+        let viewController = WalletViewController()
         let navigationVC = UINavigationController(rootViewController: viewController)
         
         window?.rootViewController = navigationVC

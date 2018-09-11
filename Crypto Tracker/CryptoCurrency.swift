@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct CryptoCoin {
+struct CryptoCurrency {
     var symbol: String
     var image: String
     var price: Double
