@@ -6,11 +6,11 @@
 //  Copyright © 2018 Jero Sanchez. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct CryptoListItemViewModel {
     var symbol: String
-    var imageName: String
+    var image: UIImage
     var price: String
     var amount: String
 }
@@ -36,7 +36,7 @@ class CryptoListViewModel {
             for modelItem in modelItems {
                 let viewItem = CryptoListItemViewModel(
                     symbol: modelItem.symbol,
-                    imageName: modelItem.image,
+                    image: UIImage(named:modelItem.image)!,
                     price: String(modelItem.price),
                     amount: String(modelItem.amount))
                 viewItems.append(viewItem)

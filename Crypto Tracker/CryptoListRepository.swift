@@ -12,7 +12,7 @@ class CryptoListRepository {
     
     private var dataSource: CryptoDataSource
     
-    private(set) var data = BindableProperty(value: [CryptoListItemModel]())
+    private(set) var data = BindableProperty(value: [CryptoCoin]())
     
     init(dataSource: CryptoDataSource) {
         self.dataSource = dataSource
@@ -20,15 +20,17 @@ class CryptoListRepository {
     
     func fetchData(currency: String) {
         
-        let symbols = ["BTC", "ETH", "LTC"]
+        let symbols = ["BCH", "BTC", "EOS", "ETH", "ETC",
+                       "DASH", "DOGE", "ETH", "LTC", "MAID",
+                       "NEO", "REP", "TRX", "XEM", "XMR", "XRP"]
         
-        var fetchedData = [CryptoListItemModel]()
+        var fetchedData = [CryptoCoin]()
         
         DispatchQueue.global(qos: .background).async {
             self.dataSource.prices(for: symbols, currency: currency, { (prices) in
                 for symbol in symbols {
                     if let price = prices[symbol] {
-                        let item = CryptoListItemModel(
+                        let item = CryptoCoin(
                             symbol: symbol,
                             image: symbol.lowercased(),
                             price: price,

@@ -61,6 +61,7 @@ extension CryptoListViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId")
         let cellData = viewModel.listItems.value[indexPath.row]
+        cell?.imageView?.image = cellData.image
         cell?.textLabel?.text = "\(cellData.symbol) - \(cellData.price)"
         cell?.accessoryType = .disclosureIndicator
         return cell!
@@ -73,7 +74,6 @@ extension CryptoListViewController {
 extension CryptoListViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Cell at position \(indexPath.row) was tapped")
         //TODO: Implement
     }
     
