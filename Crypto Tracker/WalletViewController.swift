@@ -64,6 +64,7 @@ extension WalletViewController {
         // TODO: Implement
         view.addSubview(headerView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
+        self.title = "Wallet"
     }
 
     private func updateNetWorthAmount() {
