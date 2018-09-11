@@ -10,12 +10,12 @@ import Foundation
 
 class CryptoTrackerRepository {
     
-    private var dataSource: DataSource
+    private var remoteInfoDataSource: InfoDataSource
     
     private(set) var data = BindableProperty(value: [CryptoCurrency]())
     
-    init(dataSource: DataSource) {
-        self.dataSource = dataSource
+    init(dataSource: InfoDataSource) {
+        self.remoteInfoDataSource = dataSource
     }
     
     func fetchWalletItems(currency: String) {
@@ -30,14 +30,15 @@ class CryptoTrackerRepository {
         var fetchedData = [CryptoCurrency]()
         
         DispatchQueue.global(qos: .background).async {
-            self.dataSource.prices(for: symbols, currency: currency, { (prices) in
+            self.remoteInfoDataSource.fetchPrices(for: symbols, currency: currency, { (prices) in
                 for symbol in symbols {
                     if let price = prices[symbol] {
                         let item = CryptoCurrency(
                             symbol: symbol,
                             image: symbol.lowercased(),
                             price: price,
-                            amount: 0.0)
+                            amount: 0.0,
+                            priceHistory: [Double]())
                         fetchedData.append(item)
                     }
                 }

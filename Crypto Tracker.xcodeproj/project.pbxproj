@@ -19,9 +19,12 @@
 		CAE11F9D2146D1FE0016AAE4 /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F9C2146D1FE0016AAE4 /* WalletViewModel.swift */; };
 		CAE11F9F2146D2870016AAE4 /* BindableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F9E2146D2870016AAE4 /* BindableProperty.swift */; };
 		CAE11FA32146DD790016AAE4 /* CryptoTrackerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA22146DD790016AAE4 /* CryptoTrackerRepository.swift */; };
-		CAE11FA52146E0950016AAE4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA42146E0950016AAE4 /* DataSource.swift */; };
-		CAE11FA72146E0B60016AAE4 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA62146E0B60016AAE4 /* RemoteDataSource.swift */; };
+		CAE11FA52146E0950016AAE4 /* InfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA42146E0950016AAE4 /* InfoDataSource.swift */; };
+		CAE11FA72146E0B60016AAE4 /* RemoteInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA62146E0B60016AAE4 /* RemoteInfoDataSource.swift */; };
 		CAFD15612148193600B2201F /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD15602148193600B2201F /* CryptoCurrency.swift */; };
+		CAFD15642148273D00B2201F /* CryptoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD15632148273D00B2201F /* CryptoDetailViewController.swift */; };
+		CAFD15662148278300B2201F /* CryptoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD15652148278300B2201F /* CryptoDetailViewModel.swift */; };
+		CAFD156821482B9300B2201F /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD156721482B9300B2201F /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +67,13 @@
 		CAE11F9C2146D1FE0016AAE4 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
 		CAE11F9E2146D2870016AAE4 /* BindableProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableProperty.swift; sourceTree = "<group>"; };
 		CAE11FA22146DD790016AAE4 /* CryptoTrackerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerRepository.swift; sourceTree = "<group>"; };
-		CAE11FA42146E0950016AAE4 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		CAE11FA62146E0B60016AAE4 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		CAE11FA42146E0950016AAE4 /* InfoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDataSource.swift; sourceTree = "<group>"; };
+		CAE11FA62146E0B60016AAE4 /* RemoteInfoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteInfoDataSource.swift; sourceTree = "<group>"; };
 		CAFD15602148193600B2201F /* CryptoCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 		CAFD156221481B4B00B2201F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CAFD15632148273D00B2201F /* CryptoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailViewController.swift; sourceTree = "<group>"; };
+		CAFD15652148278300B2201F /* CryptoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailViewModel.swift; sourceTree = "<group>"; };
+		CAFD156721482B9300B2201F /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		DBFEDE542E9B08BD177369DF /* Pods_Crypto_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8674B18F757EC793AE07C1 /* Pods-Crypto TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto TrackerTests/Pods-Crypto TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,10 +158,13 @@
 				CAE11F9E2146D2870016AAE4 /* BindableProperty.swift */,
 				CAE11F702146CDBD0016AAE4 /* WalletViewController.swift */,
 				CAE11F9C2146D1FE0016AAE4 /* WalletViewModel.swift */,
+				CAFD15632148273D00B2201F /* CryptoDetailViewController.swift */,
+				CAFD15652148278300B2201F /* CryptoDetailViewModel.swift */,
 				CAFD15602148193600B2201F /* CryptoCurrency.swift */,
 				CAE11FA22146DD790016AAE4 /* CryptoTrackerRepository.swift */,
-				CAE11FA42146E0950016AAE4 /* DataSource.swift */,
-				CAE11FA62146E0B60016AAE4 /* RemoteDataSource.swift */,
+				CAE11FA42146E0950016AAE4 /* InfoDataSource.swift */,
+				CAE11FA62146E0B60016AAE4 /* RemoteInfoDataSource.swift */,
+				CAFD156721482B9300B2201F /* Double+Extension.swift */,
 				CAE11F752146CDBD0016AAE4 /* Assets.xcassets */,
 				CAE11F772146CDBD0016AAE4 /* LaunchScreen.storyboard */,
 				CAE11F7A2146CDBD0016AAE4 /* Info.plist */,
@@ -393,14 +402,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFD15642148273D00B2201F /* CryptoDetailViewController.swift in Sources */,
 				CAE11F712146CDBD0016AAE4 /* WalletViewController.swift in Sources */,
 				CAE11F9D2146D1FE0016AAE4 /* WalletViewModel.swift in Sources */,
 				CAE11FA32146DD790016AAE4 /* CryptoTrackerRepository.swift in Sources */,
-				CAE11FA52146E0950016AAE4 /* DataSource.swift in Sources */,
+				CAE11FA52146E0950016AAE4 /* InfoDataSource.swift in Sources */,
+				CAFD156821482B9300B2201F /* Double+Extension.swift in Sources */,
 				CAE11F6F2146CDBD0016AAE4 /* AppDelegate.swift in Sources */,
+				CAFD15662148278300B2201F /* CryptoDetailViewModel.swift in Sources */,
 				CAFD15612148193600B2201F /* CryptoCurrency.swift in Sources */,
 				CAE11F9F2146D2870016AAE4 /* BindableProperty.swift in Sources */,
-				CAE11FA72146E0B60016AAE4 /* RemoteDataSource.swift in Sources */,
+				CAE11FA72146E0B60016AAE4 /* RemoteInfoDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

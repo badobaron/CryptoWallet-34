@@ -41,7 +41,7 @@ class WalletViewController: UITableViewController {
         return headerView
     }
     
-    // MARK: Life cycle
+    // MARK: Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +56,7 @@ class WalletViewController: UITableViewController {
     
 }
 
-// MARK: - UI setup
+// MARK: - UI Setup
 
 extension WalletViewController {
     
@@ -108,7 +108,11 @@ extension WalletViewController {
 extension WalletViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //TODO: Implement
+        // TODO: Move assembly of crypto detail VC to an assembly layer
+        let cryptoDetailViewModel = CryptoDetailViewModel()
+        let destinationViewController = CryptoDetailViewController()
+        destinationViewController.viewModel = cryptoDetailViewModel
+        navigationController?.pushViewController(destinationViewController, animated: true)
     }
     
 }

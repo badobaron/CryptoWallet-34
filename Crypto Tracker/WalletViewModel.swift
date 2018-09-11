@@ -19,7 +19,7 @@ class WalletViewModel {
     
     // Dependencies
     
-    private lazy var dataSource = RemoteDataSource()
+    private lazy var dataSource = RemoteInfoDataSource()
     private lazy var repository = CryptoTrackerRepository(dataSource: dataSource)
     
     // Bindable properties
@@ -30,6 +30,21 @@ class WalletViewModel {
     // Initialization
     
     init() {
+        setupBindings()
+    }
+    
+    func fetchData() {
+        repository.fetchWalletItems(currency: "USD")
+    }
+    
+}
+
+// MARK: - Repository bindings
+
+extension WalletViewModel {
+    
+    private func setupBindings() {
+        
         repository.data.bind { modelItems in
             
             var viewItems = [WalletItemViewModel]()
@@ -48,10 +63,6 @@ class WalletViewModel {
             //TODO: Implement calculation of net worth
             self.netWorth.value = "$9,999.99"
         }
-    }
-    
-    func fetchData() {
-        repository.fetchWalletItems(currency: "USD")
     }
     
 }

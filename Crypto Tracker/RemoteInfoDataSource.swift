@@ -9,11 +9,11 @@
 import Foundation
 import Alamofire
 
-class RemoteDataSource: DataSource {
+class RemoteInfoDataSource: InfoDataSource {
     
     private let baseUrl = "https://min-api.cryptocompare.com/data"
     
-    func prices(for symbols: [String], currency: String, _ callback: @escaping ([String : Double]) -> ()) {
+    func fetchPrices(for symbols: [String], currency: String, _ callback: @escaping ([String : Double]) -> ()) {
 
         var listOfSymbols = ""
         

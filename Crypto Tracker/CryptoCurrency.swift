@@ -13,4 +13,5 @@ struct CryptoCurrency {
     var image: String
     var price: Double
     var amount: Double
+    var priceHistory: [Double]
 }
