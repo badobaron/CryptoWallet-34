@@ -10,12 +10,17 @@ import UIKit
 
 class CryptoDetailViewModel {
 
-    // Dependencies
+    // MARK: - Dependencies
     
     private lazy var dataSource = RemoteInfoDataSource()
-    private lazy var repository = CryptoTrackerRepository(dataSource: dataSource)
     
-    // Bindable properties
+    private lazy var repository = CryptoDetailsRepository(dataSource: dataSource)
+    
+    // MARK: - Properties
+    
+    private var id: String
+    
+    // MARK: - Bindable properties
     
     var symbol = BindableProperty(value: "")
     var image = BindableProperty(value: UIImage())
@@ -24,34 +29,36 @@ class CryptoDetailViewModel {
     var amountAsMoney = BindableProperty(value: "Loading...")
     var priceHistory = BindableProperty(value: [Double]())
 
-    // Initialization
+    // MARK: - Initialization
     
-    init() {
-        setupBindings()
+    init(for symbol: String) {
+        self.id = symbol
+        repository.delegate = self
     }
+    
+    // MARK: - API
     
     func fetchData() {
-        // TODO: Fetch data from repository
-        fetchFakeData()
-    }
-    
-    private func fetchFakeData() {
-        symbol.value = "BTC"
-        image.value = UIImage(named: "btc")!
-        price.value = "$6,297.58"
-        amount.value = "0.567"
-        amountAsMoney.value = "$3,570.73"
-        priceHistory.value = Array(repeating: 6000.00, count: 30)
+        repository.fetchDetails(for: id, in: "USD")
+        repository.fetchPriceHistory(for: id, in: "USD")
     }
     
 }
 
-// MARK: - Repository bindings
+// MARK: - Repository delegate
 
-extension CryptoDetailViewModel {
+extension CryptoDetailViewModel: CryptoDetailsRepositoryDelegate {
     
-    private func setupBindings() {
-        // TODO: Bind to repo data
+    func detailsFetched(cryptoCurrency: CryptoCurrency) {
+        symbol.value = cryptoCurrency.symbol.uppercased()
+        image.value = UIImage(named: cryptoCurrency.symbol.lowercased())!
+        price.value = String(cryptoCurrency.price)
+        amount.value = "0.00"
+        amountAsMoney.value = "$0.00"
+    }
+    
+    func priceHistoryFetched(priceHistory: [Double]) {
+        self.priceHistory.value = priceHistory
     }
     
 }

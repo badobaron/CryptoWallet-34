@@ -106,7 +106,11 @@ extension CryptoDetailViewController {
             series.area = true
             self.chart.add(series)
         }
-        
+
+        viewModel.image.bindAndCall { (image) in
+            self.cryptoImage.image = self.viewModel.image.value
+        }
+
         viewModel.price.bindAndCall { (price) in
             self.priceLabel.text = self.viewModel.price.value
         }

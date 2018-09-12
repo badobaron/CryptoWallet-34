@@ -7,5 +7,8 @@
 //
 
 protocol InfoDataSource {
-    func fetchPrices(for symbols: [String], currency: String, _ callback: @escaping ([String:Double]) -> ())
+    
+    func fetchPrices(for symbols: [String], in currency: String, _ callback: @escaping ([String:Double]) -> ())
+    
+    func fetchPriceHistory(for symbol: String, in currency: String, days: Int, _ callback: @escaping ([Double]) -> ())
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WalletViewController: UITableViewController {
+class PortfolioViewController: UITableViewController {
     
     // MARK: Constants
     
@@ -17,7 +17,7 @@ class WalletViewController: UITableViewController {
 
     // MARK: Dependencies
     
-    private var viewModel = WalletViewModel()
+    private var viewModel = PortfolioViewModel()
     
     // MARK: Subviews
     
@@ -58,13 +58,13 @@ class WalletViewController: UITableViewController {
 
 // MARK: - UI Setup
 
-extension WalletViewController {
+extension PortfolioViewController {
     
     private func setupUI() {
         // TODO: Implement
         view.addSubview(headerView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
-        self.title = "Wallet"
+        self.title = "Portfolio"
     }
 
     private func updateNetWorthAmount() {
@@ -74,7 +74,7 @@ extension WalletViewController {
 
 // MARK: - Table view setup
 
-extension WalletViewController {
+extension PortfolioViewController {
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return headerHeight
@@ -87,15 +87,15 @@ extension WalletViewController {
 
 // MARK: - Table view data source
 
-extension WalletViewController {
+extension PortfolioViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.walletItems.value.count
+        return viewModel.portfolioItems.value.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId")
-        let cellData = viewModel.walletItems.value[indexPath.row]
+        let cellData = viewModel.portfolioItems.value[indexPath.row]
         cell?.imageView?.image = cellData.image
         cell?.textLabel?.text = "\(cellData.symbol) - \(cellData.price)"
         cell?.accessoryType = .disclosureIndicator
@@ -106,25 +106,21 @@ extension WalletViewController {
 
 // MARK: - Table view delegate
 
-extension WalletViewController {
+extension PortfolioViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: Move assembly of crypto detail VC to an assembly layer
-        let cryptoDetailViewModel = CryptoDetailViewModel()
-        let destinationViewController = CryptoDetailViewController()
-        destinationViewController.viewModel = cryptoDetailViewModel
-        navigationController?.pushViewController(destinationViewController, animated: true)
+        viewModel.navigateToCryptoDetails(for: indexPath.row, context: self.navigationController!)
     }
     
 }
 
 // MARK: - View model bindings
 
-extension WalletViewController {
+extension PortfolioViewController {
     
     private func setupBindings() {
         
-        viewModel.walletItems.bind { (data) in
+        viewModel.portfolioItems.bind { (data) in
             self.tableView.reloadData()
         }
         

@@ -11,9 +11,13 @@ import Alamofire
 
 class RemoteInfoDataSource: InfoDataSource {
     
+    // MARK: - Constants
+    
     private let baseUrl = "https://min-api.cryptocompare.com/data"
     
-    func fetchPrices(for symbols: [String], currency: String, _ callback: @escaping ([String : Double]) -> ()) {
+    // MARK: - API - InfoDataSource protocol
+    
+    func fetchPrices(for symbols: [String], in currency: String, _ callback: @escaping ([String : Double]) -> ()) {
 
         var listOfSymbols = ""
         
@@ -41,6 +45,27 @@ class RemoteInfoDataSource: InfoDataSource {
             callback(prices)
         }
 
+    }
+    
+    func fetchPriceHistory(for symbol: String, in currency: String, days: Int, _ callback: @escaping ([Double]) -> ()) {
+        
+        var priceHistory = [Double]()
+        
+        let requestUrlString = "\(baseUrl)/histoday?fsym=\(symbol.uppercased())&tsym=\(currency)&limit=\(days)"
+        Alamofire.request(requestUrlString).responseJSON { (response) in
+            
+            if let json = response.result.value as? [String:Any] {
+                if let pricesJSON = json["Data"] as? [[String:Double]] {
+                    for priceJSON in pricesJSON {
+                        if let closePrice = priceJSON["close"] {
+                            priceHistory.append(closePrice)
+                            
+                        }
+                    }
+                }
+            }
+            callback(priceHistory)
+        }
     }
     
 }

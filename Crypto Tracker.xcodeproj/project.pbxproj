@@ -10,15 +10,16 @@
 		08061408EA9C3B2723BDE532 /* Pods_Crypto_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1740AAF52029F5BAA0BB6CAB /* Pods_Crypto_TrackerTests.framework */; };
 		3B3D1CBB0F1A1EDEC03DD9DB /* Pods_Crypto_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFEDE542E9B08BD177369DF /* Pods_Crypto_TrackerUITests.framework */; };
 		951E3FCCF134BFCF231B3F80 /* Pods_Crypto_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72DB09ED05B319AE8118321 /* Pods_Crypto_Tracker.framework */; };
+		CA052A832149788C00065B70 /* CryptoDetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA052A822149788C00065B70 /* CryptoDetailsRepository.swift */; };
 		CAE11F6F2146CDBD0016AAE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F6E2146CDBD0016AAE4 /* AppDelegate.swift */; };
-		CAE11F712146CDBD0016AAE4 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F702146CDBD0016AAE4 /* WalletViewController.swift */; };
+		CAE11F712146CDBD0016AAE4 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F702146CDBD0016AAE4 /* PortfolioViewController.swift */; };
 		CAE11F762146CDBD0016AAE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE11F752146CDBD0016AAE4 /* Assets.xcassets */; };
 		CAE11F792146CDBD0016AAE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE11F772146CDBD0016AAE4 /* LaunchScreen.storyboard */; };
 		CAE11F842146CDBE0016AAE4 /* Crypto_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F832146CDBE0016AAE4 /* Crypto_TrackerTests.swift */; };
 		CAE11F8F2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F8E2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift */; };
-		CAE11F9D2146D1FE0016AAE4 /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F9C2146D1FE0016AAE4 /* WalletViewModel.swift */; };
+		CAE11F9D2146D1FE0016AAE4 /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F9C2146D1FE0016AAE4 /* PortfolioViewModel.swift */; };
 		CAE11F9F2146D2870016AAE4 /* BindableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11F9E2146D2870016AAE4 /* BindableProperty.swift */; };
-		CAE11FA32146DD790016AAE4 /* CryptoTrackerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA22146DD790016AAE4 /* CryptoTrackerRepository.swift */; };
+		CAE11FA32146DD790016AAE4 /* PortfolioRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA22146DD790016AAE4 /* PortfolioRepository.swift */; };
 		CAE11FA52146E0950016AAE4 /* InfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA42146E0950016AAE4 /* InfoDataSource.swift */; };
 		CAE11FA72146E0B60016AAE4 /* RemoteInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE11FA62146E0B60016AAE4 /* RemoteInfoDataSource.swift */; };
 		CAFD15612148193600B2201F /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD15602148193600B2201F /* CryptoCurrency.swift */; };
@@ -52,9 +53,10 @@
 		3C090967E3EA88E221FFCFFF /* Pods-Crypto Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto Tracker/Pods-Crypto Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		907B79CC5A4E073E8B103D71 /* Pods-Crypto TrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto TrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto TrackerUITests/Pods-Crypto TrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B72DB09ED05B319AE8118321 /* Pods_Crypto_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA052A822149788C00065B70 /* CryptoDetailsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsRepository.swift; sourceTree = "<group>"; };
 		CAE11F6B2146CDBD0016AAE4 /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE11F6E2146CDBD0016AAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAE11F702146CDBD0016AAE4 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		CAE11F702146CDBD0016AAE4 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		CAE11F752146CDBD0016AAE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAE11F782146CDBD0016AAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAE11F7A2146CDBD0016AAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,9 +66,9 @@
 		CAE11F8A2146CDBE0016AAE4 /* Crypto TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE11F8E2146CDBE0016AAE4 /* Crypto_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_TrackerUITests.swift; sourceTree = "<group>"; };
 		CAE11F902146CDBE0016AAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAE11F9C2146D1FE0016AAE4 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		CAE11F9C2146D1FE0016AAE4 /* PortfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
 		CAE11F9E2146D2870016AAE4 /* BindableProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableProperty.swift; sourceTree = "<group>"; };
-		CAE11FA22146DD790016AAE4 /* CryptoTrackerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerRepository.swift; sourceTree = "<group>"; };
+		CAE11FA22146DD790016AAE4 /* PortfolioRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRepository.swift; sourceTree = "<group>"; };
 		CAE11FA42146E0950016AAE4 /* InfoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDataSource.swift; sourceTree = "<group>"; };
 		CAE11FA62146E0B60016AAE4 /* RemoteInfoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteInfoDataSource.swift; sourceTree = "<group>"; };
 		CAFD15602148193600B2201F /* CryptoCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		CAE11F622146CDBD0016AAE4 = {
 			isa = PBXGroup;
 			children = (
+				CAFD156221481B4B00B2201F /* README.md */,
 				CAE11F6D2146CDBD0016AAE4 /* Crypto Tracker */,
 				CAE11F822146CDBE0016AAE4 /* Crypto TrackerTests */,
 				CAE11F8D2146CDBE0016AAE4 /* Crypto TrackerUITests */,
@@ -155,20 +158,20 @@
 			isa = PBXGroup;
 			children = (
 				CAE11F6E2146CDBD0016AAE4 /* AppDelegate.swift */,
-				CAE11F9E2146D2870016AAE4 /* BindableProperty.swift */,
-				CAE11F702146CDBD0016AAE4 /* WalletViewController.swift */,
-				CAE11F9C2146D1FE0016AAE4 /* WalletViewModel.swift */,
+				CAE11F702146CDBD0016AAE4 /* PortfolioViewController.swift */,
+				CAE11F9C2146D1FE0016AAE4 /* PortfolioViewModel.swift */,
+				CAE11FA22146DD790016AAE4 /* PortfolioRepository.swift */,
 				CAFD15632148273D00B2201F /* CryptoDetailViewController.swift */,
 				CAFD15652148278300B2201F /* CryptoDetailViewModel.swift */,
+				CA052A822149788C00065B70 /* CryptoDetailsRepository.swift */,
+				CAE11F9E2146D2870016AAE4 /* BindableProperty.swift */,
 				CAFD15602148193600B2201F /* CryptoCurrency.swift */,
-				CAE11FA22146DD790016AAE4 /* CryptoTrackerRepository.swift */,
 				CAE11FA42146E0950016AAE4 /* InfoDataSource.swift */,
 				CAE11FA62146E0B60016AAE4 /* RemoteInfoDataSource.swift */,
 				CAFD156721482B9300B2201F /* Double+Extension.swift */,
 				CAE11F752146CDBD0016AAE4 /* Assets.xcassets */,
 				CAE11F772146CDBD0016AAE4 /* LaunchScreen.storyboard */,
 				CAE11F7A2146CDBD0016AAE4 /* Info.plist */,
-				CAFD156221481B4B00B2201F /* README.md */,
 			);
 			path = "Crypto Tracker";
 			sourceTree = "<group>";
@@ -403,12 +406,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAFD15642148273D00B2201F /* CryptoDetailViewController.swift in Sources */,
-				CAE11F712146CDBD0016AAE4 /* WalletViewController.swift in Sources */,
-				CAE11F9D2146D1FE0016AAE4 /* WalletViewModel.swift in Sources */,
-				CAE11FA32146DD790016AAE4 /* CryptoTrackerRepository.swift in Sources */,
+				CAE11F712146CDBD0016AAE4 /* PortfolioViewController.swift in Sources */,
+				CAE11F9D2146D1FE0016AAE4 /* PortfolioViewModel.swift in Sources */,
+				CAE11FA32146DD790016AAE4 /* PortfolioRepository.swift in Sources */,
 				CAE11FA52146E0950016AAE4 /* InfoDataSource.swift in Sources */,
 				CAFD156821482B9300B2201F /* Double+Extension.swift in Sources */,
 				CAE11F6F2146CDBD0016AAE4 /* AppDelegate.swift in Sources */,
+				CA052A832149788C00065B70 /* CryptoDetailsRepository.swift in Sources */,
 				CAFD15662148278300B2201F /* CryptoDetailViewModel.swift in Sources */,
 				CAFD15612148193600B2201F /* CryptoCurrency.swift in Sources */,
 				CAE11F9F2146D2870016AAE4 /* BindableProperty.swift in Sources */,
