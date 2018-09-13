@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // TODO: Move to configuration file
+    let appIsSecuredKey = "appIsSecured"
+    
     var window: UIWindow?
 
 
@@ -18,10 +22,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let viewController = PortfolioViewController()
-        let navigationVC = UINavigationController(rootViewController: viewController)
+        let appIsSecured = UserDefaults.standard.bool(forKey: appIsSecuredKey)
         
-        window?.rootViewController = navigationVC
+        if LAContext().canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) && appIsSecured {
+            // Device support biometrics authentication & the app is secured;
+            // let's go authenticate the user...
+            let authVC = AuthViewController()
+            window?.rootViewController = authVC
+            
+        } else {
+            // Either the device does not support biometrics authentication or
+            // the app is not secured;
+            let viewController = PortfolioViewController()
+            let navigationVC = UINavigationController(rootViewController: viewController)
+            window?.rootViewController = navigationVC
+        }
+        
         window?.makeKeyAndVisible()
         
         return true

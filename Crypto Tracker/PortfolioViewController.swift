@@ -14,6 +14,9 @@ class PortfolioViewController: UITableViewController {
     
     let headerHeight: CGFloat = 130.0
     let netWorthHeight: CGFloat = 45.0
+    
+    // TODO: Move to configuration file
+    let appIsSecuredKey = "appIsSecured"
 
     // MARK: Dependencies
     
@@ -78,7 +81,9 @@ extension PortfolioViewController {
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Report", style: .plain, target: self, action: #selector(reportButtonTapped))
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Secure App", style: .plain, target: self, action: #selector(secureButtonTapped))
+        let appIsSecured = UserDefaults.standard.bool(forKey: appIsSecuredKey)
+        let secureButtonText = appIsSecured ? "Unsecure App" : "Secure App"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: secureButtonText, style: .plain, target: self, action: #selector(secureButtonTapped))
     }
     
     // MARK: - Buttons handlers
@@ -88,7 +93,9 @@ extension PortfolioViewController {
     }
     
     @objc private func secureButtonTapped() {
-        // TODO: Implement
+        let appIsSecured = !UserDefaults.standard.bool(forKey: appIsSecuredKey)
+        UserDefaults.standard.set(appIsSecured, forKey: appIsSecuredKey)
+        setupBarButtons()
     }
     
 }

@@ -97,7 +97,7 @@ extension CryptoDetailViewController {
     }
     
     private func setupBarButtons() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(editButtonTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(editButtonTapped))
     }
     
     // MARK: - Buttons handlers
