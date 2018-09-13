@@ -47,6 +47,9 @@ class PortfolioViewController: UITableViewController {
         super.viewDidLoad()
         
         setupUI()
+        
+        setupBarButtons()
+        
         setupBindings()
         }
     
@@ -70,6 +73,24 @@ extension PortfolioViewController {
     private func updateNetWorthAmount() {
         amountLabel.text = viewModel.netWorth.value
     }
+    
+    private func setupBarButtons() {
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Report", style: .plain, target: self, action: #selector(reportButtonTapped))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Secure App", style: .plain, target: self, action: #selector(secureButtonTapped))
+    }
+    
+    // MARK: - Buttons handlers
+    
+    @objc private func reportButtonTapped() {
+        // TODO: Implement
+    }
+    
+    @objc private func secureButtonTapped() {
+        // TODO: Implement
+    }
+    
 }
 
 // MARK: - Table view setup

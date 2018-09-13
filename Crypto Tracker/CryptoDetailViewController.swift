@@ -58,6 +58,8 @@ extension CryptoDetailViewController {
         setupPriceLabel()
         setupYouOwnLabel()
         setupWorthLabel()
+        
+        setupBarButtons()
     }
     
     private func setupChartView() {
@@ -92,6 +94,16 @@ extension CryptoDetailViewController {
         worthLabel.textAlignment = .center
         worthLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         view.addSubview(worthLabel)
+    }
+    
+    private func setupBarButtons() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(editButtonTapped))
+    }
+    
+    // MARK: - Buttons handlers
+    
+    @objc private func editButtonTapped() {
+        // TODO: Implement
     }
 }
 
