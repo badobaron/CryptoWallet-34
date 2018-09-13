@@ -29,7 +29,7 @@ class PortfolioViewController: UITableViewController {
     private var headerView: UIView {
         
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: headerHeight))
-        headerView.backgroundColor = .white
+        headerView.backgroundColor = UIColor.secondaryColor
         
         let netWorthLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: netWorthHeight))
         netWorthLabel.text = NSLocalizedString("My Crypto Net Worth:", comment: "My Crypto Net Worth:")
@@ -68,6 +68,7 @@ extension PortfolioViewController {
     
     private func setupUI() {
         // TODO: Implement
+        view.backgroundColor = UIColor.primaryColor
         view.addSubview(headerView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
         self.title = NSLocalizedString("Portfolio", comment: "Portfolio")

@@ -51,7 +51,7 @@ extension CryptoDetailViewController {
     private func setupUI() {
 
         edgesForExtendedLayout = []
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.primaryColor
         
         setupChartView()
         setupCryptoImageView()

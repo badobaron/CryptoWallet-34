@@ -27,6 +27,7 @@
 		CAFD15662148278300B2201F /* CryptoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD15652148278300B2201F /* CryptoDetailViewModel.swift */; };
 		CAFD156821482B9300B2201F /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD156721482B9300B2201F /* Double+Extension.swift */; };
 		CAFE251C214AD4BB00C0A1F8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE251B214AD4BB00C0A1F8 /* AuthViewController.swift */; };
+		CAFE251E214AEDF900C0A1F8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE251D214AEDF900C0A1F8 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		CAFD15652148278300B2201F /* CryptoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailViewModel.swift; sourceTree = "<group>"; };
 		CAFD156721482B9300B2201F /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		CAFE251B214AD4BB00C0A1F8 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		CAFE251D214AEDF900C0A1F8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DBFEDE542E9B08BD177369DF /* Pods_Crypto_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8674B18F757EC793AE07C1 /* Pods-Crypto TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto TrackerTests/Pods-Crypto TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 				CAE11FA42146E0950016AAE4 /* InfoDataSource.swift */,
 				CAE11FA62146E0B60016AAE4 /* RemoteInfoDataSource.swift */,
 				CAFD156721482B9300B2201F /* Double+Extension.swift */,
+				CAFE251D214AEDF900C0A1F8 /* UIColor+Extension.swift */,
 				CAE11F752146CDBD0016AAE4 /* Assets.xcassets */,
 				CAE11F772146CDBD0016AAE4 /* LaunchScreen.storyboard */,
 				CAE11F7A2146CDBD0016AAE4 /* Info.plist */,
@@ -415,6 +418,7 @@
 				CAE11FA52146E0950016AAE4 /* InfoDataSource.swift in Sources */,
 				CAFD156821482B9300B2201F /* Double+Extension.swift in Sources */,
 				CAE11F6F2146CDBD0016AAE4 /* AppDelegate.swift in Sources */,
+				CAFE251E214AEDF900C0A1F8 /* UIColor+Extension.swift in Sources */,
 				CA052A832149788C00065B70 /* CryptoDetailsRepository.swift in Sources */,
 				CAFE251C214AD4BB00C0A1F8 /* AuthViewController.swift in Sources */,
 				CAFD15662148278300B2201F /* CryptoDetailViewModel.swift in Sources */,
