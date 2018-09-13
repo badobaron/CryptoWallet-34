@@ -32,7 +32,7 @@ class PortfolioViewController: UITableViewController {
         headerView.backgroundColor = .white
         
         let netWorthLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: netWorthHeight))
-        netWorthLabel.text = "My Crypto Net Worth:"
+        netWorthLabel.text = NSLocalizedString("My Crypto Net Worth:", comment: "My Crypto Net Worth:")
         netWorthLabel.textAlignment = .center
         headerView.addSubview(netWorthLabel)
         
@@ -70,7 +70,7 @@ extension PortfolioViewController {
         // TODO: Implement
         view.addSubview(headerView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
-        self.title = "Portfolio"
+        self.title = NSLocalizedString("Portfolio", comment: "Portfolio")
     }
 
     private func updateNetWorthAmount() {
@@ -79,10 +79,10 @@ extension PortfolioViewController {
     
     private func setupBarButtons() {
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Report", style: .plain, target: self, action: #selector(reportButtonTapped))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Report", comment: "Report"), style: .plain, target: self, action: #selector(reportButtonTapped))
         
         let appIsSecured = UserDefaults.standard.bool(forKey: appIsSecuredKey)
-        let secureButtonText = appIsSecured ? "Unsecure App" : "Secure App"
+        let secureButtonText = appIsSecured ? NSLocalizedString("Unsecure App", comment: "Unsecure App") : NSLocalizedString("Secure App", comment: "Secure App")
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: secureButtonText, style: .plain, target: self, action: #selector(secureButtonTapped))
     }
     

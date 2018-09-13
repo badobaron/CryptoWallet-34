@@ -24,9 +24,9 @@ class CryptoDetailViewModel {
     
     var symbol = BindableProperty(value: "")
     var image = BindableProperty(value: UIImage())
-    var price = BindableProperty(value: "Loading...")
-    var amount = BindableProperty(value: "Loading...")
-    var amountAsMoney = BindableProperty(value: "Loading...")
+    var price = BindableProperty(value: NSLocalizedString("Loading...", comment: "Loading..."))
+    var amount = BindableProperty(value: NSLocalizedString("Loading...", comment: "Loading..."))
+    var amountAsMoney = BindableProperty(value: NSLocalizedString("Loading...", comment: "Loading..."))
     var priceHistory = BindableProperty(value: [Double]())
 
     // MARK: - Initialization

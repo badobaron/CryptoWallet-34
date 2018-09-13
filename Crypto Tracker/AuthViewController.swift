@@ -20,7 +20,7 @@ class AuthViewController: UIViewController {
     
     private func authenticateUserAndGo() {
         LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
-            localizedReason: "Your crypto portfolio is protected by biometrics") { (success, error) in
+            localizedReason: NSLocalizedString("Your crypto portfolio is protected by biometrics", comment: "Your crypto portfolio is protected by biometrics")) { (success, error) in
             
             if success {
                 // Authentication takes places in background;

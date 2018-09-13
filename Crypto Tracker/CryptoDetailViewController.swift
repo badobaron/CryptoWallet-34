@@ -143,7 +143,7 @@ extension CryptoDetailViewController {
     }
     
     private func updateYouOwnLabel() {
-        youOwnLabel.text = "You own: \(self.viewModel.amount.value) \(self.viewModel.symbol.value.uppercased())"
+        youOwnLabel.text = NSLocalizedString("You own: ", comment: "You own: ") + "\(self.viewModel.amount.value) \(self.viewModel.symbol.value.uppercased())"
     }
     
 }

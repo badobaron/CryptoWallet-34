@@ -27,7 +27,7 @@ class PortfolioViewModel {
     
     var portfolioItems = BindableProperty(value: [PortfolioItemViewModel]())
     
-    var netWorth = BindableProperty(value: "Loading...")
+    var netWorth = BindableProperty(value: NSLocalizedString("Loading...", comment: "Loading..."))
     
     // MARK: - Initialization
     
